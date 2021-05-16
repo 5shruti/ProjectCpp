@@ -1,0 +1,24 @@
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    bool Try=1;
+    while(Try){
+    int Age;
+    cout<<"Please enter your age...\n";
+     cin>>Age;
+    if(Age<0) {
+        cout<<"Negative value is not accepted, please enter the correct Age...\n";
+        Try=1;
+        continue;
+    }
+    else
+     Try=0;
+    
+     Age>=18? cout<<"You are eligible to vote!\n":cout<<"Sorry! You aren't eligible to vote yet,wait for "<<18-Age<<" more years..";
+}
+    return 0;
+}
