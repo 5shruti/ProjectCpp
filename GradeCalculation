@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int
+main ()
+{
+  int Marks;
+  cout << "Enter your marks\n";
+  cin >> Marks;
+  if (Marks >= 75)
+    {
+      cout << "\n Your grade is 'A'";
+    }
+  if (50 <= Marks && Marks < 75)
+    {
+      cout << "\n Your grade is 'B'";
+    }
+  if (35 <= Marks && Marks < 50)
+    {
+      cout << "\n Your grade is 'C'";
+    }
+  else
+    {
+      cout << "\n Your grade is 'F'";
+    }
+  return 0;
+}
