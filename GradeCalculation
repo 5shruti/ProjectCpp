@@ -2,21 +2,25 @@
 
 using namespace std;
 
-int
-main ()
+int main ()
 {
-  int Marks;
-  cout << "Enter your marks\n";
-  cin >> Marks;
-  if (Marks >= 75)
+  int Mark,avg,sum=0;
+  cout<<"Enter Marks obtained in 5 Subjects: ";
+    for(int i=0; i<5; i++)
+    {
+        cin>>Mark;
+        sum = sum+Mark;
+    }
+    avg = sum/5;
+  if (avg>= 75)
     {
       cout << "\n Your grade is 'A'";
     }
-  if (50 <= Marks && Marks < 75)
+  if (50 <= avg && avg > 75)
     {
       cout << "\n Your grade is 'B'";
     }
-  if (35 <= Marks && Marks < 50)
+  if (35 <= avg && avg > 50)
     {
       cout << "\n Your grade is 'C'";
     }
